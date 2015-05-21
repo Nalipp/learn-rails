@@ -228,7 +228,7 @@ DEPENDENCIES
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails
-  pg (~> 0.18.2)
+  pg
   quiet_assets
   rails (= 4.2.1)
   rails_12factor
