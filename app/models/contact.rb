@@ -14,6 +14,7 @@ class Contact
   def update_spreadsheet
     connection = GoogleDriveV0.login(Rails.application.secrets.email_provider_username, Rails.application.secrets.email_provider_password
 )
+
     ss = connection.spreadsheet_by_title('Learn-Rails-Example')
     if ss.nil?
       ss = connection.create_spreadsheet('Learn-Rails-Example')
